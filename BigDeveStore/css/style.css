@@ -1,0 +1,295 @@
+body {    /*CORPO*/
+    background-color: rgb(138, 182, 221); /*COR DO FUNDO DA TELA*/
+    font-weight: bold;  /*Font-weight: Peso fonte,ou seja, a mudança da espessura como o negrito (bold)*/
+}
+
+/*CSS UNIVERSAL PARA TODA A PÁGINA*/
+* {
+    margin: 0 auto;  /* A margin cria espaço ao rededor dos elementos, se colocarmos 10 a página vai para o lado esquerdo*/
+    padding: 0;   /*preenchimento usado para criar espaço ao redor do elemento*/
+    box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;  /*Fonte do texto*/
+}
+
+/*CSS DO MENU HORIZONTAL*/
+#menu-h {   /*O iD que criamos para mudar exepcionalmente o menu*/
+    background-color: rgb(6, 6, 6);  /*COR DO FUNDO DA TELA DO MENU*/
+}
+
+#menu-h ul {  /*Muda a lista*/
+    max-width: 80%;  /*Largura máxima do elemento,ou seja,ele muda a posição da lista longe da borda*/
+    list-style: none;
+    padding: 0;
+    
+}
+
+
+#menu-h ul li {   /*Muda o que está lista*/
+    display: inline;  /*mostra como vai ser exibido na tela. O inline para os textos ficarem um do lado do outro*/
+    border-right: 1px solid rgb(5, 5, 5); /*cor da reta dividindo os textos da lista*/
+}
+
+
+#menu-h ul li a { /*Muda os textos da lista*/
+
+    color: rgb(255, 255, 255); /*Cor do texto da lista*/
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .8s; /*Passar o mouse e ter uma animação*/
+}
+
+/*carrinho de compra*/
+li img {
+    float: right;
+}
+
+
+/*COR DE QUANDO PASSAR O MOUSE*/
+li a:hover {
+    background-color: rgb(38, 86, 124);
+}
+
+#menu-h ul li:last-child a { /*Last-child é o ENTRAR*/
+    float: right; /*Indicar em qual lado que que o texto flutue*/
+    background-color: rgb(135, 220, 241); /*cor de fundo do ENTRAR*/
+    color: rgb(20, 19, 19); /*Cor do texto*/
+}
+
+
+
+
+
+
+/*CSS IMAGEM*/
+/*BANNER*/
+.banner {
+    background-image: url("../img/MicrosoftTeams-image\ \(2\).png"); /*banner da tela*/
+    height: 49%; /*altura */
+    background-position: center;  /*Posição da cor do fundo*/
+    background-repeat: no-repeat; /*usada para definir como uma imagem vai ser repetida na tela*/
+    background-size: cover; /*define o tamanho da imagem de fundo do elemento, o cover informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre todo o HTML*/
+    position: relative;
+}
+
+.banner2 {
+    background-image: url("../img/sobre.png"); /*banner da tela*/
+    height: 50%; /*altura */
+    background-position: center;  /*Posição da cor do fundo*/
+    background-repeat: no-repeat; /*usada para definir como uma imagem vai ser repetida na tela*/
+    background-size: cover; /*define o tamanho da imagem de fundo do elemento, o cover informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre todo o HTML*/
+    position: relative;
+}
+
+
+body,
+html {
+    height: 100%;
+}
+
+/*CSS DO TEXTO BANNER*/
+.text_banner {
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(65, 145, 236)
+}
+
+/*CSS divS*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(242, 249, 255);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(26, 32, 109, 0.22);
+    padding: 40px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    color: rgb(3, 3, 3);
+}
+
+.div:hover {
+    transform: translateY(-10pX);
+    cursor: pointer;
+}
+
+.div p {
+    color: rgb(49, 133, 148);
+    font-size: 16px;
+}
+
+.image {
+    float: right;
+    max-height: 164px;
+    max-height: 164px;
+}
+
+.blue {
+    border-bottom: 3px solid #00BFFF;
+}
+
+.orange {
+    border-bottom: 3px solid #00BFFF;
+}
+
+.green {
+    border-bottom: 3px solid #00BFFF;
+}
+
+
+
+/*MEDIA QUERY PARA TELA DE 600*/
+@media (max-width: 600px) {
+    .row {
+    display: block;
+    }
+
+.image {
+    float: right;
+    max-width: 134px;
+    max-height: 134px;
+}
+
+.div {
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 200px;
+    transition: all 0.3s ease-out;
+    display: block;
+    max-height: 200px;
+}
+
+.banner {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+    /* background-position: none;*/
+    background-repeat: no-repeat;
+    /*background-size: none;
+    position: none;*/
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: #18517a;
+    color:white;
+}
+
+
+
+
+
+#menu-h ul {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+#menu-h {
+    width:100%;
+}
+
+}
+.main-menu { 
+
+     background-color: #333; 
+     color: #fff; 
+     padding: 10px 0; 
+    
+    } 
+    
+     
+    
+    .main-menu ul { 
+    
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    
+    } 
+    
+     
+    
+    .main-menu li { 
+    margin: 0 10px; 
+    } 
+    
+     
+    
+    .main-menu a { 
+    
+     text-decoration: none; 
+     color: #fff; 
+    
+    } 
+    
+     
+    
+    /* Estilos para a barra de pesquisa dentro do menu */ 
+    
+    .search-item { 
+     display: flex; 
+     align-items: center; 
+    
+    } 
+    
+     
+    
+    .search-input { 
+    
+     padding: 7px; 
+     border: 1px solid #ccc; 
+     border-radius: 5px; 
+    
+    } 
+    
+     
+    
+    .search-button { 
+    
+     background-color: #a427b2 ;
+     color: #fff; 
+     border: none; 
+     border-radius: 5px; 
+     padding: 5px 10px; 
+     margin-left: 5px; 
+     cursor: pointer; 
+    
+    } 
+    
+     
+    
+    /* Estilos adicionais, como hover e foco */ 
+    
+    .search-button:hover { 
+    
+    background-color: #0056b3; 
+    
+    } 
+    
+     
+    
+    .search-input:focus { 
+    
+     outline: none; 
+     border-color: #007bff; 
+     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    
+    } 
